@@ -1,0 +1,7 @@
+-main Main
+-cpp TestApp
+-cp src
+-lib hxcpp
+-dce no
+-D ABI=-MTd
+-debug
