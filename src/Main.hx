@@ -10,6 +10,7 @@ import cpp.Pointer;
 
 import engine.Include;
 
+@:analyzer(no_simplification)
 @:structAccess
 @:unreflective
 @:include("Rectangle.h")
@@ -28,11 +29,15 @@ class Main
 {
 
    public static function main() : Void{ 
-   		update(Main.Rectangle.create());
+      var rect = Main.Rectangle.create();
+      rect.ref.set_values(20,21);
+   		update(rect);
+      rect.ref.area();
    }
 
    public static function update(rect : Pointer<Rectangle>) : Int{ 
    	 var actualRect : Main.Rectangle = rect.ref;
+     actualRect.area();
    	 actualRect.set_values(4,200);
    	 actualRect.area();
    	 //rect.ref.set_values(4,200);
