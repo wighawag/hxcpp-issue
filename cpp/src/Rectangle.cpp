@@ -1,7 +1,7 @@
 #include "Rectangle.h"
 #include <iostream>
 
-void Rectangle::set_values (int x, int y) {
+void Rectangle::setValues (int x, int y) {
 	
 	std::cout << "cpp set_values(" << x << ", " << y << ")" << std::endl;
 	std::cout << "before width: " << width << ", height: " << height << std::endl;

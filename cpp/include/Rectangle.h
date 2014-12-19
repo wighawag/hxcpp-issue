@@ -4,7 +4,7 @@
 class Rectangle {
     int width, height;
   public:
-    void set_values (int,int);
+    void setValues (int,int);
 	int area(void);
 };
 

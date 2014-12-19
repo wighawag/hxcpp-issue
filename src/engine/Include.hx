@@ -8,9 +8,9 @@ package engine;
 <files id='__main__'>
   <compilerflag value='-I../cpp/include'/>
 </files>
-<target id='haxe'>
-  <lib name='../cpp/Rectangle'/>
-</target>
+<files id='__lib__'>
+  <compilerflag value='-I../cpp/include'/>
+</files>
 ")
 @:keep class Include{
 

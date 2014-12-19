@@ -4,4 +4,6 @@
 -lib hxcpp
 -dce no
 -D ABI=-MTd
+-D dump=pretty
+-D static_link
 -debug
