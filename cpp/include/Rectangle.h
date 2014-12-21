@@ -1,11 +1,13 @@
-#ifndef RECTANGLE_VALUE_H
-#define RECTANGLE_VALUE_H
+#ifndef RECTANGLE_H
+#define RECTANGLE_H
+
+#include "Area.h"
 
 class Rectangle {
     int width, height;
   public:
     void setValues (int,int);
-	int area(void);
+	Area area(void);
 };
 
 #endif

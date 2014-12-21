@@ -10,8 +10,11 @@ void Rectangle::setValues (int x, int y) {
   std::cout << "after width: " << width << ", height: " << height << std::endl;
 }
 
-int Rectangle::area(void){
+Area Rectangle::area(void){
 	std::cout << "cpp area()" << std::endl;
 	std::cout << "cpp width: " << width << ", height: " << height << std::endl;
-	return width*height;
+	auto _area = Area();
+	_area.width = width;
+	_area.height = height;
+	return _area;
 }
